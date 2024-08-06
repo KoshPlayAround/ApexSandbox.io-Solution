@@ -1,6 +1,7 @@
 public Decimal computeTip(Decimal total, Integer percent) {
+        Decimal tip = 0;
         if (percent > 0 || percent < 100) {
-        Decimal tip = (total * percent) / 100;
+         tip = (total * percent) / 100;
         
         }
         return tip; 
