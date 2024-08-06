@@ -4,5 +4,5 @@ public Decimal computeTip(Decimal total, Integer percent) {
         }
         Decimal tip = totalBill * tipPercentage / 100;
         return tip.setScale(2, RoundingMode.HALF_UP); // Round to 2 decimal places
-    }
+    
 }
