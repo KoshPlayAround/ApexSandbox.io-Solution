@@ -10,6 +10,8 @@ public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean p
      result = false;
     }else if(!passedExam && passedAssignments && passedProject){
      result = true;
+    }else if(passedExam && !passedAssignments && passedProject){
+     result = true;
     }
 
     return result;
