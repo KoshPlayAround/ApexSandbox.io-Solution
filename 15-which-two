@@ -1,13 +1,13 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
-    integer result = 0;
+    String result = '';
     if((a+b) == c){
-        result = c;
+        result = String.ValueOf(c);
     }else if((a+c) == b){
-        result = b;
+        result = String.ValueOf(b);
     }else if((b+c) == a){
-        result = a;
+        result = String.ValueOf(a);
     }
-    
-    return String.valueOf(result);
+
+    return result;
 
 }
