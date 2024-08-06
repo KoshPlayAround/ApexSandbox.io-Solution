@@ -1,8 +1,8 @@
 public Decimal computeTip(Decimal total, Integer percent) {
-   if (tipPercentage < 0 || tipPercentage > 100) {
-            throw new IllegalArgumentException('Tip percentage must be between 0 and 100');
+        if (percent > 0 || percent < 100) {
+        Decimal tip = (total * percentage) / 100;
+        return tip; 
         }
-        Decimal tip = totalBill * tipPercentage / 100;
-        return tip.setScale(2, RoundingMode.HALF_UP); // Round to 2 decimal places
+        
     
 }
