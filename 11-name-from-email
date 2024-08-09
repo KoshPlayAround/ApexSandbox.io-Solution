@@ -1,7 +1,8 @@
 public String nameFromEmail(String email) {
     String Name = '';
     if(email != ''){
-        Name = capitalize(email.substringBefore('@');
+        Name = email.substringBefore('@'));
+        Name.capitalize();
     }
     return Name;
 }
