@@ -13,7 +13,7 @@ public String nameFromEmail(String email) {
             }
         }
         
-        String formattedName = String.join(words, ' ');
+        formattedName = String.join(words, ' ');
         
     
 
