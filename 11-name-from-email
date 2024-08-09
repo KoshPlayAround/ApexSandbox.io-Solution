@@ -1,7 +1,21 @@
 public String nameFromEmail(String email) {
     String Name = '';
     if(email != ''){
-        Name = (email.substringBefore('@').replace('.', ' ')).capitalize();
+        Name = (email.substringBefore('@').replace('.', ' '));
+        String lowerCaseName = email.toLowerCase();
+        
+        List<String> words = lowerCaseName.split(' ');
+
+        for (Integer i = 0; i < words.size(); i++) {
+            if (!String.isBlank(words[i])) {
+                words[i] = words[i].capitalize();
+            }
+        }
+        
+        String formattedName = String.join(words, ' ');
+        
+        return formattedName;
+    
+
     }
-    return Name;
 }
