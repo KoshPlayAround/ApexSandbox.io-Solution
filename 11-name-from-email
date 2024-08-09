@@ -1,4 +1,5 @@
 public String nameFromEmail(String email) {
+    String formattedName = '';
     String Name = '';
     if(email != ''){
         Name = (email.substringBefore('@').replace('.', ' '));
@@ -14,8 +15,9 @@ public String nameFromEmail(String email) {
         
         String formattedName = String.join(words, ' ');
         
-        return formattedName;
     
 
     }
+            return formattedName;
+
 }
