@@ -1,19 +1,19 @@
 public Boolean isPrime(Integer num) {
 
     // Handle edge cases
-        if (number <= 1) {
+        if (num <= 1) {
             return false;
         }
-        if (number == 2) {
+        if (num == 2) {
             return true; // 2 is the only even prime number
         }
-        if (Math.mod(number , 2) == 0) {
+        if (Math.mod(num , 2) == 0) {
             return false; // Other even numbers are not prime
         }
 
         // Check divisibility from 3 to the square root of the number
-        for (Integer i = 3; i <= Math.sqrt(number); i += 2) {
-            if (Math.mod(number , i) == 0) {
+        for (Integer i = 3; i <= Math.sqrt(num); i += 2) {
+            if (Math.mod(num , i) == 0) {
                 return false; // Number is divisible by i, so it's not prime
             }
         }
