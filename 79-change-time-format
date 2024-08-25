@@ -5,9 +5,9 @@ public String changeTimeFormat(String strTime) {
     if(hr >= 1 && hr <= 11){
       returnStrtimeval = strTime + ' AM';
     }else if(hr == 0){
-      returnStrtimeval = '12 :'+min+ ' AM';
+      returnStrtimeval = '12:'+min+ ' AM';
     }else if(hr == 12){
-      returnStrtimeval = '12 :'+min+ ' PM';
+      returnStrtimeval = '12:'+min+ ' PM';
     }else if(hr > 12 && hr < 24){
       returnStrtimeval = (String.valueOf(hr-12))+':'+min+' PM';
     }
