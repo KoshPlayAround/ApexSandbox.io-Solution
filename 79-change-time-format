@@ -2,7 +2,6 @@ public String changeTimeFormat(String strTime) {
     Integer hr = Integer.valueOf(strTime.substringBefore(':'));
     String min = strTime.substringAfter(':');
     String interval = (hr < 12 ) ? 'AM' : 'PM' ;
-    String convertedtimeformat = 
     if(hr == 0){
      hr = 12;
     }else if(hr > 12){
