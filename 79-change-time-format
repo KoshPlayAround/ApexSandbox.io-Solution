@@ -2,9 +2,8 @@ public String changeTimeFormat(String strTime) {
     Integer hr = Integer.valueOf(strTime.substringBefore(':'));
     String min = strTime.substringAfter(':');
     String returnStrtimeval = '';
-    return returnStrtimeval = hr >= 1 && hr <= 11 ? strTime + ' AM' : hr == 0 ? '12:' + min + ' AM' : hr == 12 ? '12:' + min + ' PM' : hr > 12 && hr < 24 ? (hr > 12 && hr < 22 ? '0' + String.valueOf(hr - 12) + ':' + min + ' PM' : String.valueOf(hr - 12) + ':' + min + ' PM') : returnStrtimeval;
-
-
+    return returnStrtimeval = (strTime.substringBefore(':')) >= 1 && hr <= 11 ? strTime + ' AM' : hr == 0 ? '12:' + strTime.substringAfter(':') + ' AM' : hr == 12 ? '12:' + strTime.substringAfter(':') + ' PM' : hr > 12 && hr < 24 ? (hr > 12 && hr < 22 ? '0' + String.valueOf(hr - 12) + ':' + strTime.substringAfter(':') + ' PM' : String.valueOf(hr - 12) + ':' + strTime.substringAfter(':') + ' PM') : returnStrtimeval;
+    }
     /*String interval = (hr < 12 ) ? 'AM' : 'PM' ;
     if(hr == 0){
      hr = 12;
@@ -36,4 +35,3 @@ public String changeTimeFormat(String strTime) {
 
 
 
-}
