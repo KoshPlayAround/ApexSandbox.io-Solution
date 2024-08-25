@@ -9,7 +9,7 @@ public String changeTimeFormat(String strTime) {
     }else if(hr == 12){
       returnStrtimeval = '12:'+min+ ' PM';
     }else if(hr > 12 && hr < 24){
-      returnStrtimeval = String.valueOf(hr-12)+':'+min+' PM';
+      returnStrtimeval =  '0'+String.valueOf(hr-12)+':'+min+' PM';
     }
     return returnStrtimeval;
 }
