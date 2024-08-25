@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     Integer hr = (Integer)strTime.substringBefore(':');
     String min = strTime.substringAfter(':');
     if(hr >= 1 and hr <= 11){
-      return strTime + 'AM'
+      return strTime + 'AM';
     }else if(hr == 0){
       return '12 :'+min+ ' AM';
     }else if(hr == 12){
