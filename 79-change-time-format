@@ -7,7 +7,7 @@ public String changeTimeFormat(String strTime) {
     }else if(hr > 12){
      hr = hr - 12;
     }
-    retrun String.valueOf(hr)+':'+min+' '+interval;
+    return String.valueOf(hr)+':'+min+' '+interval;
 
     /*String returnStrtimeval = '';
     if(hr >= 1 && hr <= 11){
