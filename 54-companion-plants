@@ -7,7 +7,7 @@ public Boolean companionPlants(String plant1, String plant2) {
    Companions.put(cucumbers,{lettuce});
    Companions.put(carrots,{onions});
 
-   return(Companions.get(plant1).contains(plant1)?true:false);
+   return(Companions.get(plant1).contains(plant2)?true:false);
 
 
 
