@@ -1,11 +1,11 @@
 public Boolean companionPlants(String plant1, String plant2) {
 
    Map<String ,List<String>> Companions =new Map<String,List<String>>();
-   Companions.put(lettuce,{cucumbers,onions});
-   Companions.put(onions,{lettuce,tomatoes,carrots});
-   Companions.put(tomatoes,{onions});
-   Companions.put(cucumbers,{lettuce});
-   Companions.put(carrots,{onions});
+   Companions.put(lettuce,new List<String>{cucumbers,onions});
+   Companions.put(onions,new List<String>{lettuce,tomatoes,carrots});
+   Companions.put(tomatoes,new List<String>{onions});
+   Companions.put(cucumbers,new List<String>{lettuce});
+   Companions.put(carrots,new List<String>{onions});
 
    return(Companions.get(plant1).contains(plant2)?true:false);
 
