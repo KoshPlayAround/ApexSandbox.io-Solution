@@ -3,7 +3,7 @@ public String reverseWordsInASentence(String sentence){
             return '';
         }else if(sentence == null){
            return '';
-        }else{}
+        }else{
         List<String> words = sentence.split(' ');
         List<String> reversedWords = new List<String>();
         
@@ -14,6 +14,6 @@ public String reverseWordsInASentence(String sentence){
         String reversedSentence = String.join(reversedWords, ' ');
         
         return reversedSentence;
-}
 
+        }
 }
